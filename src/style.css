@@ -1,5 +1,30 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
+    background-color: rgb(14, 126, 18, 1);
+}
+.contanier-card{
     background: white;
+    width: 400px;
+    height: 100%;
+    margin: 10%;
+    font-size: 8rem;
+}
+
+p{
+    background-color: white;
+    
+}
+
+.number{
+    text-align: center;
+}
+
+.top-item{
+    margin-left: 20px;
+}
+
+.botom-item{
+    text-align: end;
+    margin-right: 20px;
 }

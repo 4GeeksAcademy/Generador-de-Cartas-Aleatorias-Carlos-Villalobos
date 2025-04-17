@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
 
@@ -14,20 +16,23 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="container">
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div class="row">
+    <div class="col-7 contanier-card">
+      <p class="top-item"></p>
+      <p class="number"></p>
+      <p class="text-xxl-end botom-item"></p>
     </div>
+
+    <div class="col-5 p-3 mt-4">
+      
+      <input placeholder="Elige la anchura" type="number" class="col-9 p-2 mt-3" id="tamano">
+      <input placeholder="Elige la altura" type="number" id="altura" class="col-9 p-2 mt-3" >
+    </div>
+
+  </div>
+    <button type="button" class="btn btn-light" onclick="window.onload()">Change card</button>;
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
