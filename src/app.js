@@ -18,10 +18,7 @@ function generarCarta() {
   let randomIcons = Math.floor(Math.random() * iconos.length)
 
   document.querySelector(".top-item").innerHTML = iconos[randomIcons]
-  //document.querySelector(".top-number").innerHTML = values[randomValue]
-
   document.querySelector(".botom-item").innerHTML = iconos[randomIcons]
-  //document.querySelector(".botom-number").innerHTML = values[randomValue]
   document.querySelector(".number").innerHTML = values[randomValue]
   document.querySelector(".botom-item").style.color = randomIcons <= 1 ? "red" : "black";
   document.querySelector(".top-item").style.color = randomIcons <= 1 ? "red" : "black";
@@ -34,6 +31,3 @@ function generarCarta() {
   alto.addEventListener("input", () => {card.style.height = alto.value + "px";});
 }
 
-function tamanos() {
-  
-}
